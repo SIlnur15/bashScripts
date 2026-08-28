@@ -1,7 +1,6 @@
 #!/bin/bash
 # testing variables
-myDirectory1=`pwd`
-echo "the result of printing by first way of printing my directory $myDirectory1"
-myDirectory2=$(pwd)
-echo "the second way of printing my directory is $myDireectory"
-pwd
+var1=$((5+5))
+echo "$var1"
+var2=$(pwd)
+echo "$var2"
