@@ -40,7 +40,7 @@ IFS=$'\n'
 for entry in $(cat /etc/passwd)
 do
 echo "Values in $entry –"
-IFS=:
+IFS=: # Теперь мы меняем IFS на двоеточие. Это нужно для внутреннего цикла: теперь Bash будет разбивать строку entry по символу :
 	for value in $entry
 	do
 	echo " $value"
